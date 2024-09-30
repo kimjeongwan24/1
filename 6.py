@@ -83,7 +83,7 @@ activation2 = Activation_Softmax()
 loss_function = Loss_CategoricalCrossentropy()
 
 # 최적화 변수 설정
-lowest_loss = 999999  # 초깃값을 매우 크게 설정
+lowest_loss = 9999999  # 초깃값을 매우 크게 설정
 best_dense1_weights = dense1.weights.copy()
 best_dense2_weights = dense2.weights.copy()
 best_dense1_biases = dense1.biases.copy()
