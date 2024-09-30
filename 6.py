@@ -92,10 +92,10 @@ best_dense2_biases = dense2.biases.copy()
 # 학습 반복문
 for iteration in range(100000):
     # 가중치와 편향에 무작위 변동 추가
-    dense1.weights += 0.05 * np.random.randn(2, 3)
-    dense2.weights += 0.05 * np.random.randn(3, 10)  # 출력 뉴런에 맞게 수정
-    dense1.biases += 0.05 * np.random.randn(1, 3)
-    dense2.biases += 0.05 * np.random.randn(1, 10)
+    dense1.weights += 0.01 * np.random.randn(2, 3)
+    dense2.weights += 0.01 * np.random.randn(3, 10)  # 출력 뉴런에 맞게 수정
+    dense1.biases += 0.01 * np.random.randn(1, 3)
+    dense2.biases += 0.01 * np.random.randn(1, 10)
 
     # 순전파 계산
     out = activation1.forward(dense1.forward(X))
